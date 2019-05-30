@@ -25,11 +25,11 @@ hr{
 }
 .loginbox{
 	width: 520px;
-	height: 2320px;
+	height: 2820px;
 	/*background: rgba(0,0,0,.7);*/
 	background: white;
 	color:black;
-	top:190%;
+	top:240%;
 	left: 50%;
 	position: absolute;
 	transform: translate(-55%,-50%);
