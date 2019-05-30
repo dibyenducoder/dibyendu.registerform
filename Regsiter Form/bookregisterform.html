@@ -16,13 +16,13 @@
 
 		<h2>Complete the form below to sign up for our membership service.</h2>
 		<hr><br><br>
-		<form>
+		<form >
 			  <p>Full Name</p>
-              <input type="text" name="" placeholder="Enter Name">
+              <input type="text" name="Name" placeholder="Enter Name" required>
               
               
               <p>Date Of Birth</p>
-				<select name="Birthday_day" id="Birthday_Day">
+				<select name="Birthday_day" id="Birthday_Day" required="">
 				<option value="-1">Day:</option>
 				<option value="1">1</option>			
 				<option value="2">2</option>
@@ -61,7 +61,7 @@
 					<option value="31">31</option>
 					</select>
 					 
-					<select id="Birthday_Month" name="Birthday_Month">
+					<select id="Birthday_Month" name="Birthday_Month" required>
 					<option value="-1">Month:</option>
 					<option value="January">Jan</option>
 					<option value="February">Feb</option>
@@ -77,7 +77,7 @@
 					<option value="December">Dec</option>
 					</select>
 					 
-					<select name="Birthday_Year" id="Birthday_Year">
+					<select name="Birthday_Year" id="Birthday_Year" required>
 					 
 					<option value="-1">Year:</option>
 					<option value="2012">2012</option>
@@ -119,17 +119,17 @@
 					
 
               <p>Password</p>
-              <input type="password" name="" placeholder="Enter Your Password">
+              <input type="password" name="Password" placeholder="Enter Your Password" required>
               
               <p>Email ID</p>
-              <input type="email" name="" placeholder="name@example.com">
+              <input type="email" name="Email" placeholder="name@example.com" required>
              
               <p>Mobile Number</p>
-              <input type="text" name="" placeholder="Mobile Number 1">
+              <input type="text" name="" placeholder="Mobile Number 1 required">
               <input type="text" name="" placeholder="Mobile Number 2">
              
               <p>Address No.1</p>
- 				<td><textarea name="Address" rows="4" cols="30"></textarea></td>
+ 				<td><textarea name="Address" rows="4" cols="30" required></textarea></td>
  			<p>Address No.2(Optional)</p>
  				<td><textarea name="Address" rows="4" cols="30"></textarea></td><br><br><br>
               <p>Gender</p><br>
@@ -148,24 +148,85 @@
               <br><br>
               <!----- City ---------------------------------------------------------->
 				<p>City</p>
-				<input type="text" name="City" maxlength="30" placeholder="(max 30 characters a-z and A-Z)" />
+				<input type="text" name="City" maxlength="30" placeholder="(max 30 characters a-z and A-Z)" required />
 				
 				
 				 
 				<!----- Pin Code ---------------------------------------------------------->
 				<p>Pin Code</p>
-				<input type="text" name="Pin_Code" maxlength="6" placeholder="(6 digit number)" />
+				<input type="text" name="Pin_Code" maxlength="6" placeholder="(6 digit number)" required />
 				
 				
 				 
 				<!----- State ---------------------------------------------------------->
 				<p>State</p>
-				<input type="text" name="State" maxlength="30" placeholder="(max 30 characters a-z and A-Z)" />
+				<input type="text" name="State" maxlength="30" placeholder="(max 30 characters a-z and A-Z)" required />
 				
 				 
 				<!----- Country ---------------------------------------------------------->
 				<p>Country</p>
-				<input type="text" name="Country" placeholder="India"/>
+				<input type="text" name="Country" placeholder="India" required />
+
+				<p>Interested Books<br>
+				(More Than One option can be selected)</p><br>
+              <label class="container" required>Action and Adventure 
+				  <input type="checkbox" >
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Historical fiction
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Detective 
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Fairy Tails
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Children's 
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				 <label class="container">Romance  
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">CookBook 
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Comic Books 
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Biography 
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Journal 
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Science Fiction 
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Satire  
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Young Adult 
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">E-Books  
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				</label>
+              <br><br>
 
 				<!-----News
 				--------------------------------------------------------->
@@ -187,6 +248,7 @@
 				  <span class="checkmark"></span>
 				</label>
               	<br><br>
+              	<!--Member Ship Rules---->
               	<hr>
               	<h3>MemberShip Rules</h3>
               	<hr>
@@ -197,7 +259,7 @@
               	<br><br>
 
               	<label class="container">I have read, understood, and accepted the rules for membership.
-				  <input type="checkbox">
+				  <input type="checkbox" required>
 				  <span class="checkmark"></span>
 				</label>
 				<br><br>
@@ -211,7 +273,7 @@
               	</h4>
               	<br>
               	<label class="container">I have read, understood, and accepted the <b>PRIVACY POLICY</b> for membership.
-				  <input type="checkbox">
+				  <input type="checkbox" required>
 				  <span class="checkmark"></span>
 				</label>
               	<br><br>
@@ -223,6 +285,7 @@
 
 
 <script src="gotop.js"></script>
+<script src="wrong_email.js"></script>
 <a href="#" class="gotop" id="hand"><i class="fas fa-hand-point-up"></i></a>
               	
 </body>
