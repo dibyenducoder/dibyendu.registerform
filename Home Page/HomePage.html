@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+	<link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<link href="popup-video.css" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+
+	
+</head>
+<body>
+		
+
+		<div class="wrap">
+			<div class="top-bar">
+				<div class="logo">
+					<img src="Booksfellas.png">
+				</div>
+				<div class="menu-bar" id=>
+					<ul>
+						
+						<li><a class="nav" href="#home">Home</a></li>
+						<li><a class="nav" href="#menu">Menu</a></li>
+						<li><a class="nav" href="#comm">Comunity <i class="fa fa-angle-down"></i></a>
+								<ul>
+								<li><a class="nav1" href="#discuss">Discussion 
+								</a></li>
+								<li><a class="nav1" href="#people">People
+								
+								</a></li>
+								
+								
+							</ul>
+						</li>
+
+						<li><a class="nav" href="#ins">Authors</a>
+						</li>
+						
+						<li><a class="nav" href="#abt">About</a></li>
+						<li><a class="nav" href="cont">Contact</a></li>
+						<!--<li>
+							<div class="search">
+								<div class="input-search">
+									<input type="text" placeholder="Search...">
+								<div class="search-icon">
+							<span><i class="fa fa-search"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+						</li>-->
+					
+					</ul>
+				</div>
+				
+				<div class="search">
+					<div class="input-search">
+						<input type="text" placeholder="Search...">
+						<div class="search-icon">
+							<span><i class="fa fa-search"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+			
+			<div class="quotes">
+				<div class="quotes-text">
+					<h1><i class="fa fa-quote-left"></i> Books are like mirrors: if a fool looks in , you cannot expect a genius to look out . <i class="fa fa-quote-right"></i></h1>
+					<p>-J.K Rowling</p>
+					<span>
+						<a href="#videoStory" class="video-btn" id="videoLink">About BookFellas  <i class="fa fa-play-circle" aria-hidden="true">&nbsp;</i></a>
+   					<div id="videoStory" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+      				<iframe width="853" height="480" src="https://www.youtube.com/embed/albW7I6XUoE" frameborder="0" allowfullscreen></iframe>
+   					</div>
+					</span>
+				
+				</div>
+				<div class="quotes-image">
+					<img src="sket_book.png">
+				</div>
+			</div>
+			<small><b>Explore More</b><b>Bookies</b></small>
+
+			
+			<div class="user"><i class="fa fa-user-circle"></i></div>
+			
+
+
+			<div class=social-media>
+				<!--class="fa fa-user-circle"-->
+				<ul>
+					<li><i class="fa fa-facebook-square"></i>></li>
+					<li><i class="fa fa-twitter-square"></i></li>
+					<li><i class="fa fa-linkedin"></i></i></li>
+					<li><i class="fa fa-instagram"></i></li>
+					<li><i class="fa fa-pinterest-square"></i></li>
+				</ul>
+			</div>
+		</div>
+
+		<script>
+			$('#videoLink').magnificPopup({
+	  			type:'inline',
+	  			midClick: true 
+  											})
+
+			  $(function () {
+			    $('a[href="#search"]').on('click', function(event) {
+			        event.preventDefault();
+			        $('#search').addClass('open');
+			        $('#search > form > input[type="search"]').focus();
+			    });
+			    
+			    $('#search, #search button.close').on('click keyup', function(event) {
+			        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+			            $(this).removeClass('open');
+			        }
+			    });
+			    
+			    
+			    //Do not include! This prevents the form from submitting for DEMO purposes only!
+			    $('form').submit(function(event) {
+			        event.preventDefault();
+			        return false;
+			    })
+			});
+		</script>
+
+
+</body>
+</html>
